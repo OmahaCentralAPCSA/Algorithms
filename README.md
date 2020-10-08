@@ -51,6 +51,7 @@ Find GCD(B,R) using the Euclidean Algorithm since GCD(A,B) = GCD(B,R)
 
 ### A worked out example also helps understand the algorithm too:
 
+```
 Find the GCD of 270 and 192  
 A=270, B=192  
 A ≠0  
@@ -87,9 +88,35 @@ So we have shown:
 GCD(270,192) = GCD(192,78) = GCD(78,36) = GCD(36,6) = GCD(6,0) = 6  
 GCD(270,192) = 6  
 
+```
 
+## :100: Perfect Numbers
+A perfect number is a positive integer equal to the sum of all its divisors (including 1 but excluding itself).  
 
-## Perfect Numbers
+Examples:  
+6 = 1 + 2 + 3  
+28 = 1 + 2 + 4 + 7 + 14  
+...
+
+:pushpin: Write a program that calculates the first 4 perfect numbers (which includes 6 and 28)  
+
 
 ## Mersenne Primes
+A Mersenne Prime is a prime number that is in the form of `2^n - 1`.  
+
+So:  
+2 = 2^1 - 1  
+3 = 2^2 - 1  
+7 = 2^3 - 1  
+31 = 2^4 - 1  
+... 
+
+Leonhard Euler proved that any EVEN perfect number must have that form (2^(n-1))(2^n - 1)  
+
+2^3 - 1 = 7 (which is prime)  
+2^2(2^3 - 1) = 28 (which is a perfect number)  
+
+:pushpin: Write a program that finds the first 6 Mersenne Primes and then calculates their corresponding perfect numbers.  
+
+
 
